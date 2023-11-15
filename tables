@@ -1,0 +1,37 @@
+CREATE TABLE pilotos (
+    id INT PRIMARY KEY,
+    nombre VARCHAR (30),
+    apellidos VARCHAR (30),
+    alias VARCHAR (30),
+    equipo VARCHAR (50),
+    numero_de_dorsal VARCHAR (30)
+);
+CREATE TABLE equipo (
+    id INT PRIMARY KEY,
+    nombre_del_equipo VARCHAR (30), 
+    jefe_de_equipo VARCHAR (30),
+    marca VARCHAR (30)
+);
+CREATE TABLE circuito (
+    nombre INT PRIMARY KEY,
+    longitud VARCHAR (30),
+    telf_de_contacto VARCHAR (30),
+    tiempo_de_vuelta_mas_rapida VARCHAR (30),
+    pais_en_el_que_se_encuentra VARCHAR (30)
+);
+CREATE TABLE temporada (
+    temporada INT PRIMARY KEY,
+    id_premio VARCHAR (30),
+    id_ciruito VARCHAR (30)
+);
+CREATE TABLE GP (
+    premio VARCHAR (30)
+);
+CREATE TABLE pais(
+    pais VARCHAR (30),
+    id_pilotos VARCHAR (30)
+);
+CREATE TABLE marca(
+    marca INT PRIMARY KEY,
+    id_equipo VARCHAR (30)
+);
